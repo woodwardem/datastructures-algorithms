@@ -63,27 +63,18 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  const wArray = [];
-  word.forEach(str => {
-    wArray.push(str.toUpperCase + '!'());
-  })
-   return wArray;
+  return word.toUpperCase() + '!';
+  
+  
   };
   
 
 
 const speaker = (words, callback) => {
   const qArray = [];
-  words.forEach(str => {
-  function second(callback) {
-    speaker.words;
-    callback (speaker);
-
-  }
-    second(speaker);
-
-  })
   
+  words.forEach(word => qArray.push(callback(word)));
+
   return qArray;
 };
 
@@ -137,17 +128,12 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  const array [{ name: 'apples', available: true },
-  { name: 'pears', available: true },
-  { name: 'oranges', available: false },
-  { name: 'bananas', available: true },
-  { name: 'blueberries', available: false }]
-
+  //
    
-    availableItems.forEach(array.length > i; array.push(i));
+    //availableItems.forEach(array.length > i; array.push(i));
   
-})
-return availableItems;
+//})
+//return availableItems;
 };
 
 /* ------------------------------------------------------------------------------------------------
