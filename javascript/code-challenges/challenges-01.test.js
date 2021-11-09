@@ -102,9 +102,9 @@ const addNumbers = (num, arr, times, callback) => {
   const theArray = [];
   arr.forEach(num => theArray.push(num + 1));
 for (let i=0; i<theArray.length; i++) {
-function hold(callback) {
-  callback.addNumbers();
-}
+
+  callback.arr();
+
 }
 return theArray;
 };
