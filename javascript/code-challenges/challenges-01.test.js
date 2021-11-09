@@ -95,19 +95,15 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
-value.push(arr);
+arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  const theArray = [];
-  arr.forEach(num => theArray.push(num + 1));
-for (let i=0; i<theArray.length; i++) {
-
-  callback.arr();
-
-}
-return theArray;
-};
+  for (let i=0; i < times; i++) {
+    callback(arr, num);
+  };
+    return arr;
+  }
 
 /* ------------------------------------------------------------------------------------------------
 
