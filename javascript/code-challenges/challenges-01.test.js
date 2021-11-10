@@ -127,13 +127,13 @@ const createList = (availableItems) => {
   const newArray = [];
 
    availableItems.forEach(item => {
-     if (item.available === true)
+     if (item.available === true){
        newArray.push(item.name);
      }
-    
-   )};
+   
+    });
    return newArray;
-    
+    };
 /* ------------------------------------------------------------------------------------------------
 STRETCH - CHALLENGE 7
 
