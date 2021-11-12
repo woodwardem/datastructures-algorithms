@@ -104,7 +104,7 @@ const addNumbers = (num, arr, times, callback) => {
   };
     return arr;
   }
-
+  addNumbers(8, [], 5, addValues)
 /* ------------------------------------------------------------------------------------------------
 
 CHALLENGE 6
