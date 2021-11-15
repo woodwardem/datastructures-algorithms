@@ -9,8 +9,14 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 ------------------------------------------------------------------------------------------------ */
 
 const raisedToTheThird = (arr) => {
-  // Solution code here...
-};
+ 
+  arr.forEach(arr => (Math.pow(3, arr)));
+  return arr;
+  };
+  
+;
+  
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -57,7 +63,10 @@ Write a function named forEachTwoToThe that produces the same output as your for
 ------------------------------------------------------------------------------------------------ */
 
 const forEachTwoToThe = (arr) => {
-  // Solution code here...
+  const newArray = [];
+  arr.forEach(arr => newArray.push(Math.pow(2, arr[i])));
+  return newArray;
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -67,7 +76,7 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 ------------------------------------------------------------------------------------------------ */
 
 const mapTwoToThe = (arr) => {
-  // Solution code here...
+  return arr.map(arr => Math.pow(2, arr[i]));
 };
 
 /* ------------------------------------------------------------------------------------------------
