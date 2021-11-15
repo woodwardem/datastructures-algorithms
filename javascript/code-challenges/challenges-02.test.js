@@ -10,8 +10,8 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 
 const raisedToTheThird = (arr) => {
  
-  arr.forEach(arr => (Math.pow(3, arr)));
-  return arr;
+  arr.forEach(num => (Math.pow(3, num)));
+  return forEach;
   };
   
 ;
@@ -64,7 +64,7 @@ Write a function named forEachTwoToThe that produces the same output as your for
 
 const forEachTwoToThe = (arr) => {
   const newArray = [];
-  arr.forEach(arr => newArray.push(Math.pow(2, arr[i])));
+  arr.forEach(num => newArray.push(Math.pow(2, num)));
   return newArray;
   
 };
@@ -76,7 +76,7 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 ------------------------------------------------------------------------------------------------ */
 
 const mapTwoToThe = (arr) => {
-  return arr.map(arr => Math.pow(2, arr[i]));
+  return arr.map(num => Math.pow(2, num));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -104,7 +104,13 @@ For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 ------------------------------------------------------------------------------------------------ */
 
 const evenOdd = (arr) => {
-  // Solution code here...
+  return arr.map(num => {
+
+    if (typeof num !== 'number' ) {
+    return 'N/A';
+    }
+    return num % 2 === 0 ? 'even' : 'odd';
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -197,7 +203,14 @@ const snorlaxStats = {
 };
 
 const extractStats = (arr) => {
-  // Solution code here...
+  return arr.map(stat => ({
+    name: statObj.stat.name,
+    total: statObj.effort + statObj.baseStat,
+  }
+
+  )
+
+  )
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -269,7 +282,7 @@ xdescribe('Testing challenge 7', () => {
   });
 });
 
-xdescribe('Testing challenge 8', () => {
+describe('Testing challenge 8', () => {
   test('It should return an array containing the keys from an object', () => {
     expect(evenOdd([5, 8, 2, 6, 9, 13, 542, 541])).toStrictEqual([ 'odd', 'even', 'even', 'even', 'odd', 'odd', 'even', 'odd' ]);
     expect(evenOdd([5, 8, 2, 6, 9, 13, 542, 541]).length).toStrictEqual(8);
@@ -298,7 +311,7 @@ xdescribe('Testing challenge 9', () => {
   });
 });
 
-xdescribe('Testing challenge 10', () => {
+describe('Testing challenge 10', () => {
   test('It should return an array containing objects with name and total values', () => {
     expect(extractStats(snorlaxStats.stats)).toStrictEqual([
       { name: 'speed', total: 35, },
