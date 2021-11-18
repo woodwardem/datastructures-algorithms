@@ -9,12 +9,12 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 ------------------------------------------------------------------------------------------------ */
 
 const raisedToTheThird = (arr) => {
- 
-  arr.forEach(num => (Math.pow(3, num)));
-  return forEach;
-  };
+ const newArray = [];
+  arr.forEach(num => newArray.push(Math.pow(num, 3)));
   
-;
+  
+  return newArray;
+};
   
 
 
