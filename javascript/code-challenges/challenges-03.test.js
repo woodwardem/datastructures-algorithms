@@ -7,8 +7,13 @@ Write a function called addTwo that takes in an array and adds two to every valu
 ------------------------------------------------------------------------------------------------ */
 
 const addTwo = (arr) => {
-  // Solution code here...
+  const theArray = [];
+ for (let i=0; i < arr.length; i++) {
+   theArray.push(arr[i] + 2);
+}
+return theArray; 
 };
+  
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -44,7 +49,7 @@ For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const oddValues = (arr) => {
-  // Solution code here...
+ return arr.filter(currentValue => typeof currentValue === 'odd');
 };
 
 /* ------------------------------------------------------------------------------------------------
