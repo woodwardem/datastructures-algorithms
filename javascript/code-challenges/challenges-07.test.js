@@ -1,5 +1,7 @@
 'use strict';
 
+const { slice } = require("cheerio/lib/api/traversing");
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
@@ -145,8 +147,9 @@ You may also use other string or array methods.
 
 const splitFoods = (recipe) => {
   let result = [];
-   recipe.split( ' , ' );
-   recipe.push(result);
+   recipe.ingredients.forEach(ingredient => {
+     result.push(ingredient.split(' ').slice(2).join(' '));
+   })
   return result;
 };
 
@@ -297,7 +300,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   test('It should return a list of foods', () => {
     expect(splitFoods(gruffaloCrumble)).toStrictEqual(['Gruffalo', 'oats', 'brown sugar', 'flour', 'pure maple syrup', 'chopped nuts', 'baking soda', 'baking powder', 'cinnamon', 'melted butter', 'fresh water']);
   });
