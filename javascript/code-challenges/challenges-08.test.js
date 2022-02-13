@@ -53,7 +53,8 @@ let characters = [
 ];
 
 const sortByChildren = (charArray) => {
-  // Solution code here...
+  let regex = /0-10/g;
+  return regex.test(charArray);
 };
 
 /* ------------------------------------------------------------------------------------------------
