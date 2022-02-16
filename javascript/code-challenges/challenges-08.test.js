@@ -94,7 +94,8 @@ Write a function named containsWorld that takes in a string or number of any len
 ------------------------------------------------------------------------------------------------ */
 
 const containsWorld = (input) => {
-  // Solution code here...
+  let pattern = /[a-z][A-Z]/g;
+  return result = input.match(pattern);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -118,7 +119,10 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  let pattern = /[A-J]/g;
+  let newArray = [];
+  pattern.push(newArray);
+  return newArray; 
 };
 
 /* ------------------------------------------------------------------------------------------------
