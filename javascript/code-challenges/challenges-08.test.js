@@ -94,8 +94,8 @@ Write a function named containsWorld that takes in a string or number of any len
 ------------------------------------------------------------------------------------------------ */
 
 const containsWorld = (input) => {
-  let pattern = /[a-z][A-Z]/g;
-  return result = input.match(pattern);
+  let pattern = /world/;
+  return pattern.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
