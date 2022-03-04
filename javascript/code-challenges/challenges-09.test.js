@@ -46,7 +46,9 @@ Write a function named checkValues that takes in an object and a value and retur
 ------------------------------------------------------------------------------------------------ */
 
 const checkValues = (obj, value) => {
-  return Object.values(obj).forEach(value => value ? === true : "");
+  let found = false;
+   Object.values(obj).forEach(val => val === value ?  found = true : "");
+  return found;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -69,9 +71,9 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ------------------------------------------------------------------------------------------------ */
 
 const updateNumbers = (obj) => {
-  return Object.reduce((accumlator, currentValue) => {
-    return currentValue > accumlator '' currentValue : accumlator;
-  })
+  // return Object.reduce((accumlator, currentValue) => {
+  //   return currentValue > accumlator '' currentValue : accumlator;
+  // })
 };
 
 
@@ -146,6 +148,8 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   Object.values(character);
+  Object.values(arr);
+  return arr;
   return character;
 
 };
