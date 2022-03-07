@@ -71,9 +71,9 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ------------------------------------------------------------------------------------------------ */
 
 const updateNumbers = (obj) => {
-  // return Object.reduce((accumlator, currentValue) => {
-  //   return currentValue > accumlator '' currentValue : accumlator;
-  // })
+  return currentValue.reduce((accumlator, currentValue) => {
+   return currentValue > accumlator ? '' :currentValue ; accumlator;
+   })
 };
 
 
@@ -128,10 +128,10 @@ const characters = [
 ];
 
 const getHouses = (arr) => {
-  // let houses = [];
-  // return Array.keys(arr);
-  // arr.push(houses);
-  // return houses;
+   let homes = [];
+   return arr.keys(house);
+  house.push(homes);
+   return homes;
 };
 
 /*------------------------------------------------------------------------------------------------
