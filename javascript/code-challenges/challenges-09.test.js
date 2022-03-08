@@ -71,10 +71,14 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ------------------------------------------------------------------------------------------------ */
 
 const updateNumbers = (obj) => {
-  return currentValue.reduce((accumlator, currentValue) => {
-   return currentValue > accumlator ? '' :currentValue ; accumlator;
-   })
-};
+let newArray = [];
+Object.keys(obj).forEach(key => {
+  newArray.push(`${key}: ${obj[key]}`);
+})
+
+return newArray;
+
+}
 
 
 
