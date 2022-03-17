@@ -58,8 +58,14 @@ For example:
 return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
-  // Solution code here...
-};
+  let totalSum = 0;
+  matrix.forEach(arr => {
+    arr.forEach( num => {
+      totalSum += num;
+    })
+  })
+  return totalSum;
+}
 
 
 /* ------------------------------------------------------------------------------------------------
