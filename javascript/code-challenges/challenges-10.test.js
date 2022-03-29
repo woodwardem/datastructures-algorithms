@@ -150,11 +150,9 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  let totalSum = 0;
-  howManyTreats.forEach(arr => {
-howManyTreats => totalSum;
-  })
-  return howManyTreats;
+ return arr[2].items[1].quantity;
+  
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
