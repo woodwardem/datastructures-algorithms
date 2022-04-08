@@ -19,8 +19,13 @@ Becomes:
 ------------------------------------------------------------------------------------------------ */
 
 function transformToLis(obj){
-  const transformToLis = obj.filter
-};
+return Object.keys(obj).map(key => {
+  return (
+    `<li>${key}: ${obj[key]}</li>`
+  )
+})
+}
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
